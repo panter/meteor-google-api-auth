@@ -2,23 +2,16 @@ Package.describe({
   name: 'panter:google-api-auth',
   version: '0.0.1',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'create an jwt auth client for google apis',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/panter/meteor-google-api-auth',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
-  documentation: 'README.md'
-});
+  documentation: 'README.md',
+})
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.8.1');
-  api.use('ecmascript');
-  api.mainModule('google-api-auth.js');
-});
-
-Package.onTest(function(api) {
-  api.use('ecmascript');
-  api.use('tinytest');
-  api.use('panter:google-api-auth');
-  api.mainModule('google-api-auth-tests.js');
-});
+  api.versionsFrom('1.8.1')
+  api.use('ecmascript')
+  api.mainModule('google-api-auth.js')
+})
